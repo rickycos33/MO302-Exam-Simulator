@@ -4,20 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MO302 Exam Simulator</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+        }
+        .feature {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .start-button {
+            display: inline-block;
+            background: #f39c12;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+        .start-button:hover {
+            background: #e67e22;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>Welcome to the MO302 Exam Simulator</h1>
-    </header>
-    <section>
-        <h2>About the Exam Simulator</h2>
-        <p>The MO302 Exam Simulator provides an interactive and engaging way to prepare for your MO302 exams. Our simulator offers various features including practice tests, performance tracking, and immediate feedback on your answers.</p>
-        <p>Access the interactive exam by clicking the button below.</p>
-        <button onclick="location.href='interactive_exam.html'">Start Interactive Exam</button>
-    </section>
-    <footer>
-        <p>&copy; 2026 MO302 Exam Simulator. All rights reserved.</p>
-    </footer>
+        <p>Prepare yourself with our interactive exam experience!</p>
+        <ul class="features">
+            <li class="feature">✔ Comprehensive Exam Coverage</li>
+            <li class="feature">✔ Real-time Feedback</li>
+            <li class="feature">✔ Personalized Study Guidance</li>
+        </ul>
+        <p>Click the button below to start your interactive exam:</p>
+        <a href="https://opal.google/app/1GKdP33f_Snq38Mgntt2B3umqtPtdvKqC" class="start-button">Start Interactive Exam</a>
+    </div>
 </body>
 </html>
