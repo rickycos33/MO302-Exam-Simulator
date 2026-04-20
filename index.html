@@ -3,68 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MO302 Exam Simulator</title>
+    <title>Positively Leading People and Organizations - Exam Simulator</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #4facfe, #00f2fe);
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .container {
-            text-align: center;
-            padding: 50px;
-            max-width: 600px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-        .features {
-            list-style: none;
-            padding: 0;
-            margin: 30px 0;
-        }
-        .feature {
-            margin: 10px 0;
-            font-size: 1.1em;
-        }
-        .start-button {
-            display: inline-block;
-            background: #f39c12;
-            color: white;
-            padding: 15px 40px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            transition: background 0.3s;
-            margin-top: 20px;
-        }
-        .start-button:hover {
-            background: #e67e22;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: #333; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 40px 20px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        header h1 { font-size: 2.8em; margin-bottom: 10px; font-weight: 600; letter-spacing: 0.5px; }
+        header .subtitle { font-size: 1.2em; opacity: 0.95; font-weight: 300; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+        .intro-section { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin-bottom: 40px; }
+        .intro-section h2 { color: #1e3c72; font-size: 1.8em; margin-bottom: 15px; font-weight: 600; }
+        .intro-section p { font-size: 1.05em; color: #555; margin-bottom: 15px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 40px; }
+        .feature-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); border-left: 5px solid #2a5298; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); }
+        .feature-card h3 { color: #1e3c72; font-size: 1.3em; margin-bottom: 12px; font-weight: 600; }
+        .feature-card p { color: #666; font-size: 0.95em; }
+        .cta-section { background: white; padding: 50px 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); text-align: center; }
+        .cta-section h2 { color: #1e3c72; font-size: 1.8em; margin-bottom: 20px; font-weight: 600; }
+        .cta-section p { font-size: 1.05em; color: #555; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .start-button { display: inline-block; background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%); color: white; padding: 16px 50px; text-decoration: none; border-radius: 5px; font-size: 1.1em; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(42, 82, 152, 0.3); text-transform: uppercase; letter-spacing: 1px; border: none; cursor: pointer; }
+        .start-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(42, 82, 152, 0.4); }
+        footer { background: #1e3c72; color: white; text-align: center; padding: 20px; margin-top: 60px; font-size: 0.9em; }
+        .icon { font-size: 2.5em; margin-bottom: 10px; }
+        @media (max-width: 768px) { header h1 { font-size: 1.8em; } .container { padding: 30px 15px; } .features-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Positively Leading People and Organizations</h1>
+        <p class="subtitle">Interactive Exam Simulator</p>
+    </header>
     <div class="container">
-        <h1>Welcome to the MO302 Exam Simulator</h1>
-        <p>Prepare yourself with our interactive exam experience!</p>
-        <ul class="features">
-            <li class="feature">✔ Comprehensive Exam Coverage</li>
-            <li class="feature">✔ Real-time Feedback</li>
-            <li class="feature">✔ Personalized Study Guidance</li>
-        </ul>
-        <p>Click the button below to start your interactive exam:</p>
-        <a href="https://opal.google/app/1GKdP33f_Snq38Mgntt2B3umqtPtdvKqC" class="start-button">Start Interactive Exam</a>
+        <div class="intro-section">
+            <h2>Prepare for Excellence in Organizational Leadership</h2>
+            <p>This comprehensive exam simulator is designed to help you master the key concepts, theories, and practices of effective leadership and organizational management. Through interactive practice and personalized feedback, you'll develop the competencies needed to lead people and organizations with integrity and vision.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card"><div class="icon">📋</div><h3>Comprehensive Coverage</h3><p>Practice with questions aligned to the full course curriculum.</p></div>
+            <div class="feature-card"><div class="icon">💡</div><h3>Instant Feedback</h3><p>Receive immediate, detailed corrections on your answers.</p></div>
+            <div class="feature-card"><div class="icon">📊</div><h3>Personalized Guidance</h3><p>Get tailored study recommendations based on performance.</p></div>
+            <div class="feature-card"><div class="icon">🎯</div><h3>Exam Structure Match</h3><p>Practice with questions formatted like the actual exam.</p></div>
+            <div class="feature-card"><div class="icon">🔄</div><h3>Unlimited Attempts</h3><p>Each attempt features new, unique questions.</p></div>
+            <div class="feature-card"><div class="icon">📚</div><h3>Resource Integration</h3><p>Access integrated course materials in exam feedback.</p></div>
+        </div>
+        <div class="cta-section">
+            <h2>Ready to Excel?</h2>
+            <p>Start your exam preparation now and develop deeper insights into positive leadership principles.</p>
+            <a href="https://opal.google/app/1GKdP33f_Snq38Mgntt2B3umqtPtdvKqC" class="start-button">Start Exam Simulator</a>
+        </div>
     </div>
+    <footer>
+        <p>Positively Leading People and Organizations | Exam Simulator | University Assignment</p>
+    </footer>
 </body>
 </html>
